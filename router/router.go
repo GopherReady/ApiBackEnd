@@ -12,6 +12,7 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 	// 	middlewares
 	g.Use(gin.Recovery())
 	g.Use(middleware.NoCache, middleware.Options, middleware.Secure)
+	g.Use(middleware.ZapLogger())
 	g.Use(mw...)
 	// 404 handeler
 	g.NoRoute(func(c *gin.Context) {

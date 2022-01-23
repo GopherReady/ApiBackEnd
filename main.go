@@ -7,10 +7,12 @@ import (
 	"time"
 
 	"github.com/GopherReady/ApiBackEnd/config"
+	"github.com/GopherReady/ApiBackEnd/model"
 	"github.com/GopherReady/ApiBackEnd/router"
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
+	"go.uber.org/zap"
 )
 
 var (
@@ -24,7 +26,13 @@ func main() {
 	if err := config.Init(*cfg); err != nil {
 		panic(err)
 	}
-	// Set gin mode.
+	// init zap logger
+	logger := config.InitLogger()
+	// init database
+	model.DB.Init()
+	defer model.DB.Close()
+
+	// gin 有 3 种运行模式：debug、release 和 test，其中 debug 模式会打印很多 debug 信息。
 	gin.SetMode(viper.GetString("runmode"))
 	client := gin.New()
 
@@ -45,8 +53,9 @@ func main() {
 		log.Print("The vps has been deployed successfully.")
 	}()
 
-	log.Printf("Start to listening the incoming requests on http address: %s", viper.GetString("addr"))
-	log.Printf(http.ListenAndServe(viper.GetString("addr"), client).Error())
+	// logger.Info("Start to listening the incoming requests on http address: %s", viper.GetString("addr"))
+	logger.Info("Start to listening the incoming requests on http address", zap.String("addr", viper.GetString("addr")))
+	logger.Info(http.ListenAndServe(viper.GetString("addr"), client).Error())
 
 }
 

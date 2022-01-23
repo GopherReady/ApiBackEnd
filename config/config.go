@@ -1,10 +1,8 @@
 package config
 
 import (
-	"fmt"
 	"log"
 	"strings"
-	"time"
 
 	"github.com/fsnotify/fsnotify"
 	"github.com/spf13/viper"
@@ -23,13 +21,6 @@ func Init(cfg string) error {
 	if err := c.initConfig(); err != nil {
 		return err
 	}
-
-	go func() {
-		for {
-			fmt.Println(viper.GetString("runmode"))
-			time.Sleep(4 * time.Second)
-		}
-	}()
 
 	// 监控配置文件变化并热加载程序
 	c.watchConfig()
