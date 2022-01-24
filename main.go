@@ -23,8 +23,10 @@ func main() {
 	if err := initialize.InitViper(*cfg); err != nil {
 		panic(err)
 	}
+
 	// init zap logger
 	initialize.InitLogger()
+
 	// init database
 	initialize.InitGorm()
 	defer func(DB *gorm.DB) {
@@ -59,5 +61,5 @@ func pingServer() error {
 		global.Logger.Info("Waiting for the vps, retry in 1 second.")
 		time.Sleep(time.Second)
 	}
-	return errors.New("Cannot connect to the vps.")
+	return errors.New("cannot connect to the vps")
 }

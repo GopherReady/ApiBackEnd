@@ -10,8 +10,11 @@ mysql:
   username: root
   password: mysqlroot...
 
-
-
 # JWT配置
-jwt:
-  signingKey: z3d6k8v0n3w7m9sa1fd0u09h
+jwt_secret: 213idhaskdd0990128jlasnl
+
+# HTTPS 请求
+tls:
+  addr: :6664
+  cert: config/server.crt
+  key: config/server.key

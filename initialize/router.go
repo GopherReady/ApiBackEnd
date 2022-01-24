@@ -26,6 +26,7 @@ func RouterInitialize() {
 	// 404 handeler
 	g.NoRoute(func(c *gin.Context) {
 		c.String(http.StatusNotFound, "API router is not found")
+		global.Logger.Infof("Client query wrong router link %s", c.Request.URL)
 	})
 
 	// The health check handlers
@@ -36,17 +37,27 @@ func RouterInitialize() {
 		VPSHealth.GET("/cpu", health.CPUCheck)
 		VPSHealth.GET("/ram", health.RAMCheck)
 	}
-
+	// api for authentication functionalities
 	u := g.Group("/v1/user")
+	u.POST("/login", user.Login)     // 用户注册获得签名认证
+	u.POST("/register", user.Create) // 创建用户
+	u.Use(middleware.JwtAuth())
 	{
-		u.POST("", user.Create)       // 创建用户
 		u.DELETE("/:id", user.Delete) // 删除用户
 		u.PUT("/:id", user.Update)    // 更新用户
 		u.GET("", user.List)          // 用户列表
 		u.GET("/:username", user.Get) // 获取指定用户的详细信息
 	}
 
+	// Start ListenAndServeTLS HTTPS requests
+	cert := viper.GetString("tls.cert")
+	key := viper.GetString("tls.key")
+	if cert != "" && key != "" {
+		go func() {
+			global.Logger.Infof("Start to listening the incoming requests on https address: %s", viper.GetString("tls.addr"))
+			global.Logger.Info(http.ListenAndServeTLS(viper.GetString("tls.addr"), cert, key, g).Error())
+		}()
+	}
 	global.Logger.Infof("Start to listening the incoming requests on http address %s", viper.GetString("addr"))
 	global.Logger.Info(http.ListenAndServe(viper.GetString("addr"), g).Error())
-
 }
