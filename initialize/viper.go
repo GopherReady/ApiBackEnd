@@ -2,7 +2,6 @@ package initialize
 
 import (
 	"fmt"
-	"log"
 	"strings"
 
 	"github.com/GopherReady/ApiBackEnd/global"
@@ -56,6 +55,6 @@ func (c *Config) initConfig() error {
 func (c *Config) watchConfig() {
 	viper.WatchConfig()
 	viper.OnConfigChange(func(e fsnotify.Event) {
-		log.Printf("Config file changed: %s", e.Name)
+		global.Logger.Infof("Config file changed: %s", e.Name)
 	})
 }

@@ -1,211 +1,38 @@
-2022-01-23 21:15:06	[34mINFO[0m	config/zap.go:54	hello info
-2022-01-23 21:15:06	[35mDEBUG[0m	config/zap.go:55	hello debug
-2022-01-23 21:15:06	[34mINFO[0m	config/zap.go:57	cools
-2022-01-23 21:15:06	[34mINFO[0m	ApiBackEnd/main.go:53	Start to listening the incoming requests on http address{addr 15 0 :6663 <nil>}
-2022-01-23 21:36:19	[34mINFO[0m	config/zap.go:54	logger test
-2022-01-23 21:36:19	[35mDEBUG[0m	config/zap.go:55	hello debug
-2022-01-23 21:36:19	[34mINFO[0m	config/zap.go:57	cools
-2022-01-23 21:36:19	[34mINFO[0m	ApiBackEnd/main.go:52	Start to listening the incoming requests on http address: %s:7777
-2022-01-23 21:36:19	[34mINFO[0m	ApiBackEnd/main.go:53	Start to listening the incoming requests on http address{addr 15 0 :7777 <nil>}
-2022-01-23 21:53:36	[34mINFO[0m	config/zap.go:54	logger test
-2022-01-23 21:53:36	[35mDEBUG[0m	config/zap.go:55	hello debug
-2022-01-23 21:53:36	[34mINFO[0m	config/zap.go:57	cools
-2022-01-23 21:53:36	[34mINFO[0m	config/zap.go:54	logger test
-2022-01-23 21:53:36	[35mDEBUG[0m	config/zap.go:55	hello debug
-2022-01-23 21:53:36	[34mINFO[0m	config/zap.go:57	cools
-2022-01-23 21:53:36	[34mINFO[0m	ApiBackEnd/main.go:52	Start to listening the incoming requests on http address: %s:7777
-2022-01-23 21:53:36	[34mINFO[0m	ApiBackEnd/main.go:53	Start to listening the incoming requests on http address{addr 15 0 :7777 <nil>}
-2022-01-23 21:53:37	[34mINFO[0m	middleware/logger.go:19	/vps/health{status 11 200  <nil>} {method 15 0 GET <nil>} {path 15 0 /vps/health <nil>} {query 15 0  <nil>} {ip 15 0 127.0.0.1 <nil>} {user-agent 15 0 Go-http-client/1.1 <nil>} {errors 15 0  <nil>} {cost 8 0  <nil>}
-2022-01-23 21:55:23	[34mINFO[0m	config/zap.go:54	logger test
-2022-01-23 21:55:23	[35mDEBUG[0m	config/zap.go:55	hello debug
-2022-01-23 21:55:23	[34mINFO[0m	config/zap.go:57	cools
-2022-01-23 21:55:23	[34mINFO[0m	ApiBackEnd/main.go:52	Start to listening the incoming requests on http address: %s:7777
-2022-01-23 21:55:23	[34mINFO[0m	ApiBackEnd/main.go:53	Start to listening the incoming requests on http address{addr 15 0 :7777 <nil>}
-2022-01-23 21:56:03	[34mINFO[0m	config/zap.go:54	logger test
-2022-01-23 21:56:03	[35mDEBUG[0m	config/zap.go:55	hello debug
-2022-01-23 21:56:03	[34mINFO[0m	config/zap.go:57	cools
-2022-01-23 21:56:03	[34mINFO[0m	ApiBackEnd/main.go:52	Start to listening the incoming requests on http address: %s:6663
-2022-01-23 21:56:03	[34mINFO[0m	ApiBackEnd/main.go:53	Start to listening the incoming requests on http address{addr 15 0 :6663 <nil>}
-2022-01-23 21:56:59	[34mINFO[0m	config/zap.go:54	logger test
-2022-01-23 21:56:59	[35mDEBUG[0m	config/zap.go:55	hello debug
-2022-01-23 21:56:59	[34mINFO[0m	config/zap.go:57	cools
-2022-01-23 21:56:59	[34mINFO[0m	config/zap.go:54	logger test
-2022-01-23 21:56:59	[35mDEBUG[0m	config/zap.go:55	hello debug
-2022-01-23 21:56:59	[34mINFO[0m	config/zap.go:57	cools
-2022-01-23 21:56:59	[34mINFO[0m	ApiBackEnd/main.go:52	Start to listening the incoming requests on http address: %s:6663
-2022-01-23 21:56:59	[34mINFO[0m	ApiBackEnd/main.go:53	Start to listening the incoming requests on http address{addr 15 0 :6663 <nil>}
-2022-01-23 21:56:59	[34mINFO[0m	middleware/logger.go:19	/vps/health{status 11 200  <nil>} {method 15 0 GET <nil>} {path 15 0 /vps/health <nil>} {query 15 0  <nil>} {ip 15 0 127.0.0.1 <nil>} {user-agent 15 0 Go-http-client/1.1 <nil>} {errors 15 0  <nil>} {cost 8 0  <nil>}
-2022-01-23 21:57:03	[34mINFO[0m	middleware/logger.go:19	/vps/health{status 11 200  <nil>} {method 15 0 GET <nil>} {path 15 0 /vps/health <nil>} {query 15 0  <nil>} {ip 15 0 127.0.0.1 <nil>} {user-agent 15 0 PostmanRuntime/7.28.0 <nil>} {errors 15 0  <nil>} {cost 8 0  <nil>}
-2022-01-23 21:57:08	[34mINFO[0m	middleware/logger.go:19	/vps/ram{status 11 200  <nil>} {method 15 0 GET <nil>} {path 15 0 /vps/ram <nil>} {query 15 0  <nil>} {ip 15 0 127.0.0.1 <nil>} {user-agent 15 0 PostmanRuntime/7.28.0 <nil>} {errors 15 0  <nil>} {cost 8 846200  <nil>}
-2022-01-23 21:59:26	[34mINFO[0m	config/zap.go:54	logger test
-2022-01-23 21:59:26	[35mDEBUG[0m	config/zap.go:55	hello debug
-2022-01-23 21:59:26	[34mINFO[0m	config/zap.go:57	cools
-2022-01-23 21:59:26	[34mINFO[0m	config/zap.go:54	logger test
-2022-01-23 21:59:26	[35mDEBUG[0m	config/zap.go:55	hello debug
-2022-01-23 21:59:26	[34mINFO[0m	config/zap.go:57	cools
-2022-01-23 21:59:26	[34mINFO[0m	ApiBackEnd/main.go:52	Start to listening the incoming requests on http address: %s:6663
-2022-01-23 21:59:26	[34mINFO[0m	ApiBackEnd/main.go:53	Start to listening the incoming requests on http address{addr 15 0 :6663 <nil>}
-2022-01-23 21:59:26	[34mINFO[0m	middleware/logger.go:19	/vps/health{status 11 200  <nil>} {method 15 0 GET <nil>} {path 15 0 /vps/health <nil>} {query 15 0  <nil>} {ip 15 0 127.0.0.1 <nil>} {user-agent 15 0 Go-http-client/1.1 <nil>} {errors 15 0  <nil>} {cost 8 0  <nil>}
-2022-01-23 21:59:26	[34mINFO[0m	middleware/logger.go:29	/vps/health%!(EXTRA string=status %s method %s query %s ip %s user-agent %s, int=200, string=GET, string=/vps/health, string=, string=127.0.0.1, string=Go-http-client/1.1)
-2022-01-23 21:59:42	[34mINFO[0m	middleware/logger.go:19	/vps/ram{status 11 200  <nil>} {method 15 0 GET <nil>} {path 15 0 /vps/ram <nil>} {query 15 0  <nil>} {ip 15 0 127.0.0.1 <nil>} {user-agent 15 0 PostmanRuntime/7.28.0 <nil>} {errors 15 0  <nil>} {cost 8 0  <nil>}
-2022-01-23 21:59:42	[34mINFO[0m	middleware/logger.go:29	/vps/ram%!(EXTRA string=status %s method %s query %s ip %s user-agent %s, int=200, string=GET, string=/vps/ram, string=, string=127.0.0.1, string=PostmanRuntime/7.28.0)
-2022-01-23 22:00:05	[34mINFO[0m	middleware/logger.go:19	/vps/ram{status 11 200  <nil>} {method 15 0 GET <nil>} {path 15 0 /vps/ram <nil>} {query 15 0  <nil>} {ip 15 0 127.0.0.1 <nil>} {user-agent 15 0 PostmanRuntime/7.28.0 <nil>} {errors 15 0  <nil>} {cost 8 0  <nil>}
-2022-01-23 22:00:05	[34mINFO[0m	middleware/logger.go:29	/vps/ram%!(EXTRA string=status %s method %s query %s ip %s user-agent %s, int=200, string=GET, string=/vps/ram, string=, string=127.0.0.1, string=PostmanRuntime/7.28.0)
-2022-01-23 22:01:57	[34mINFO[0m	config/zap.go:54	logger test
-2022-01-23 22:01:57	[35mDEBUG[0m	config/zap.go:55	hello debug
-2022-01-23 22:01:57	[34mINFO[0m	config/zap.go:57	cools
-2022-01-23 22:01:57	[34mINFO[0m	config/zap.go:54	logger test
-2022-01-23 22:01:57	[35mDEBUG[0m	config/zap.go:55	hello debug
-2022-01-23 22:01:57	[34mINFO[0m	config/zap.go:57	cools
-2022-01-23 22:01:57	[34mINFO[0m	ApiBackEnd/main.go:52	Start to listening the incoming requests on http address: %s:6663
-2022-01-23 22:01:57	[34mINFO[0m	ApiBackEnd/main.go:53	Start to listening the incoming requests on http address{addr 15 0 :6663 <nil>}
-2022-01-23 22:01:57	[34mINFO[0m	middleware/logger.go:19	/vps/health{status 11 200  <nil>} {method 15 0 GET <nil>} {path 15 0 /vps/health <nil>} {query 15 0  <nil>} {ip 15 0 127.0.0.1 <nil>} {user-agent 15 0 Go-http-client/1.1 <nil>} {errors 15 0  <nil>} {cost 8 0  <nil>}
-2022-01-23 22:01:57	[34mINFO[0m	middleware/logger.go:29	/vps/health status %!s(int=200) method GET query  ip 127.0.0.1 user-agent Go-http-client/1.1
-2022-01-23 22:03:38	[34mINFO[0m	config/zap.go:54	logger test
-2022-01-23 22:03:38	[35mDEBUG[0m	config/zap.go:55	hello debug
-2022-01-23 22:03:38	[34mINFO[0m	config/zap.go:57	cools
-2022-01-23 22:03:38	[34mINFO[0m	config/zap.go:54	logger test
-2022-01-23 22:03:38	[35mDEBUG[0m	config/zap.go:55	hello debug
-2022-01-23 22:03:38	[34mINFO[0m	config/zap.go:57	cools
-2022-01-23 22:03:38	[34mINFO[0m	ApiBackEnd/main.go:52	Start to listening the incoming requests on http address: %s:6663
-2022-01-23 22:03:38	[34mINFO[0m	ApiBackEnd/main.go:53	Start to listening the incoming requests on http address{addr 15 0 :6663 <nil>}
-2022-01-23 22:03:39	[34mINFO[0m	middleware/logger.go:19	/vps/health{status 11 200  <nil>} {method 15 0 GET <nil>} {path 15 0 /vps/health <nil>} {query 15 0  <nil>} {ip 15 0 127.0.0.1 <nil>} {user-agent 15 0 Go-http-client/1.1 <nil>} {errors 15 0  <nil>} {cost 8 997500  <nil>}
-2022-01-23 22:03:39	[34mINFO[0m	middleware/logger.go:29	/vps/health status 200 method GET query  ip 127.0.0.1 user-agent Go-http-client/1.1
-2022-01-23 22:07:57	[34mINFO[0m	config/zap.go:54	logger test
-2022-01-23 22:07:57	[35mDEBUG[0m	config/zap.go:55	hello debug
-2022-01-23 22:07:57	[34mINFO[0m	config/zap.go:57	cools
-2022-01-23 22:07:57	[34mINFO[0m	config/zap.go:54	logger test
-2022-01-23 22:07:57	[35mDEBUG[0m	config/zap.go:55	hello debug
-2022-01-23 22:07:57	[34mINFO[0m	config/zap.go:57	cools
-2022-01-23 22:07:57	[34mINFO[0m	ApiBackEnd/main.go:52	Start to listening the incoming requests on http address: %s:6663
-2022-01-23 22:07:57	[34mINFO[0m	ApiBackEnd/main.go:53	Start to listening the incoming requests on http address{addr 15 0 :6663 <nil>}
-2022-01-23 22:07:58	[34mINFO[0m	middleware/logger.go:19	/vps/health{status 11 200  <nil>} {method 15 0 GET <nil>} {path 15 0 /vps/health <nil>} {query 15 0  <nil>} {ip 15 0 127.0.0.1 <nil>} {user-agent 15 0 Go-http-client/1.1 <nil>} {errors 15 0  <nil>} {cost 8 505200  <nil>}
-2022-01-23 22:07:58	[34mINFO[0m	middleware/logger.go:29	url /vps/health statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: Go-http-client/1.1
-2022-01-23 22:09:21	[34mINFO[0m	config/zap.go:54	logger test
-2022-01-23 22:09:21	[35mDEBUG[0m	config/zap.go:55	hello debug
-2022-01-23 22:09:21	[34mINFO[0m	config/zap.go:57	cools
-2022-01-23 22:09:21	[34mINFO[0m	config/zap.go:54	logger test
-2022-01-23 22:09:21	[35mDEBUG[0m	config/zap.go:55	hello debug
-2022-01-23 22:09:21	[34mINFO[0m	config/zap.go:57	cools
-2022-01-23 22:09:21	[34mINFO[0m	ApiBackEnd/main.go:52	Start to listening the incoming requests on http address: %s:6663
-2022-01-23 22:09:21	[34mINFO[0m	ApiBackEnd/main.go:53	Start to listening the incoming requests on http address{addr 15 0 :6663 <nil>}
-2022-01-23 22:09:22	[34mINFO[0m	middleware/logger.go:19	/vps/health{status 11 200  <nil>} {method 15 0 GET <nil>} {path 15 0 /vps/health <nil>} {query 15 0  <nil>} {ip 15 0 127.0.0.1 <nil>} {user-agent 15 0 Go-http-client/1.1 <nil>} {errors 15 0  <nil>} {cost 8 0  <nil>}
-2022-01-23 22:09:22	[34mINFO[0m	middleware/logger.go:29	url /vps/health statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: Go-http-client/1.1errors:  cost 0s
-2022-01-23 22:09:34	[34mINFO[0m	config/zap.go:54	logger test
-2022-01-23 22:09:34	[35mDEBUG[0m	config/zap.go:55	hello debug
-2022-01-23 22:09:34	[34mINFO[0m	config/zap.go:57	cools
-2022-01-23 22:09:34	[34mINFO[0m	config/zap.go:54	logger test
-2022-01-23 22:09:34	[35mDEBUG[0m	config/zap.go:55	hello debug
-2022-01-23 22:09:34	[34mINFO[0m	config/zap.go:57	cools
-2022-01-23 22:09:34	[34mINFO[0m	ApiBackEnd/main.go:52	Start to listening the incoming requests on http address: %s:6663
-2022-01-23 22:09:34	[34mINFO[0m	ApiBackEnd/main.go:53	Start to listening the incoming requests on http address{addr 15 0 :6663 <nil>}
-2022-01-23 22:09:34	[34mINFO[0m	middleware/logger.go:19	/vps/health{status 11 200  <nil>} {method 15 0 GET <nil>} {path 15 0 /vps/health <nil>} {query 15 0  <nil>} {ip 15 0 127.0.0.1 <nil>} {user-agent 15 0 Go-http-client/1.1 <nil>} {errors 15 0  <nil>} {cost 8 0  <nil>}
-2022-01-23 22:09:34	[34mINFO[0m	middleware/logger.go:29	url /vps/health statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: Go-http-client/1.1 errors:  cost 0s
-2022-01-23 22:10:07	[34mINFO[0m	middleware/logger.go:19	/vps/ram{status 11 200  <nil>} {method 15 0 GET <nil>} {path 15 0 /vps/ram <nil>} {query 15 0  <nil>} {ip 15 0 127.0.0.1 <nil>} {user-agent 15 0 PostmanRuntime/7.28.0 <nil>} {errors 15 0  <nil>} {cost 8 0  <nil>}
-2022-01-23 22:10:07	[34mINFO[0m	middleware/logger.go:29	url /vps/ram statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 0s
-2022-01-23 22:10:17	[34mINFO[0m	config/zap.go:54	logger test
-2022-01-23 22:10:17	[35mDEBUG[0m	config/zap.go:55	hello debug
-2022-01-23 22:10:17	[34mINFO[0m	config/zap.go:57	cools
-2022-01-23 22:10:17	[34mINFO[0m	config/zap.go:54	logger test
-2022-01-23 22:10:17	[35mDEBUG[0m	config/zap.go:55	hello debug
-2022-01-23 22:10:17	[34mINFO[0m	config/zap.go:57	cools
-2022-01-23 22:10:17	[34mINFO[0m	ApiBackEnd/main.go:52	Start to listening the incoming requests on http address: %s:6663
-2022-01-23 22:10:17	[34mINFO[0m	ApiBackEnd/main.go:53	Start to listening the incoming requests on http address{addr 15 0 :6663 <nil>}
-2022-01-23 22:10:17	[34mINFO[0m	middleware/logger.go:28	url /vps/health statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: Go-http-client/1.1 errors:  cost 504.9µs
-2022-01-23 22:10:19	[34mINFO[0m	middleware/logger.go:28	url /vps/ram statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 0s
-2022-01-23 22:10:21	[34mINFO[0m	middleware/logger.go:28	url /vps/ram statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 0s
-2022-01-23 22:10:25	[34mINFO[0m	middleware/logger.go:28	url /vps/cpu statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 55.3318ms
-2022-01-23 22:10:28	[34mINFO[0m	middleware/logger.go:28	url /vps/ram statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 0s
-2022-01-23 22:10:41	[34mINFO[0m	middleware/logger.go:28	url /vps/ram statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 0s
-2022-01-23 22:10:53	[34mINFO[0m	middleware/logger.go:28	url /vps/cpu statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 32.6188ms
-2022-01-23 22:10:54	[34mINFO[0m	middleware/logger.go:28	url /vps/cpu statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 33.0581ms
-2022-01-23 22:10:55	[34mINFO[0m	middleware/logger.go:28	url /vps/cpu statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 33.8525ms
-2022-01-23 22:10:57	[34mINFO[0m	middleware/logger.go:28	url /vps/ram statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 0s
-2022-01-23 22:10:57	[34mINFO[0m	middleware/logger.go:28	url /vps/ram statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 0s
-2022-01-23 22:10:59	[34mINFO[0m	middleware/logger.go:28	url /vps/ram statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 0s
-2022-01-23 22:11:02	[34mINFO[0m	middleware/logger.go:28	url /vps/health statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 0s
-2022-01-23 22:11:11	[34mINFO[0m	middleware/logger.go:28	url /vps/health statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 0s
-2022-01-23 22:11:11	[34mINFO[0m	middleware/logger.go:28	url /vps/ram statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 0s
-2022-01-23 22:11:11	[34mINFO[0m	middleware/logger.go:28	url /vps/cpu statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 45.5196ms
-2022-01-23 22:11:11	[34mINFO[0m	middleware/logger.go:28	url /vps/ram statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 495.4µs
-2022-01-23 22:40:36	[34mINFO[0m	config/zap.go:54	logger test
-2022-01-23 22:40:36	[35mDEBUG[0m	config/zap.go:55	hello debug
-2022-01-23 22:40:36	[34mINFO[0m	config/zap.go:57	cools
-2022-01-23 22:40:36	[34mINFO[0m	config/zap.go:54	logger test
-2022-01-23 22:40:36	[35mDEBUG[0m	config/zap.go:55	hello debug
-2022-01-23 22:40:36	[34mINFO[0m	config/zap.go:57	cools
-2022-01-23 22:40:36	[34mINFO[0m	ApiBackEnd/main.go:56	Start to listening the incoming requests on http address: %s:7777
-2022-01-23 22:40:36	[34mINFO[0m	ApiBackEnd/main.go:57	Start to listening the incoming requests on http address{addr 15 0 :7777 <nil>}
-2022-01-23 22:40:36	[34mINFO[0m	middleware/logger.go:29	url /vps/health statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: Go-http-client/1.1 errors:  cost 0s
-2022-01-24 08:27:25	[34mINFO[0m	initialize/zap.go:55	logger test
-2022-01-24 08:27:25	[35mDEBUG[0m	initialize/zap.go:56	hello debug
-2022-01-24 08:27:25	[34mINFO[0m	initialize/zap.go:58	cools
-2022-01-24 08:28:28	[34mINFO[0m	initialize/zap.go:55	logger test
-2022-01-24 08:28:28	[35mDEBUG[0m	initialize/zap.go:56	hello debug
-2022-01-24 08:28:28	[34mINFO[0m	initialize/zap.go:58	cools
-2022-01-24 08:29:57	[34mINFO[0m	initialize/zap.go:55	logger test
-2022-01-24 08:29:57	[35mDEBUG[0m	initialize/zap.go:56	hello debug
-2022-01-24 08:29:57	[34mINFO[0m	initialize/zap.go:58	cools
-2022-01-24 08:29:57	[34mINFO[0m	ApiBackEnd/main.go:61	Start to listening the incoming requests on http address :7777
-2022-01-24 08:29:57	[34mINFO[0m	middleware/logger.go:29	url /vps/health statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: Go-http-client/1.1 errors:  cost 0s
-2022-01-24 08:30:52	[34mINFO[0m	initialize/zap.go:55	logger test
-2022-01-24 08:30:52	[35mDEBUG[0m	initialize/zap.go:56	hello debug
-2022-01-24 08:30:52	[34mINFO[0m	initialize/zap.go:58	cools
-2022-01-24 08:30:52	[34mINFO[0m	ApiBackEnd/main.go:61	Start to listening the incoming requests on http address :6663
-2022-01-24 08:30:52	[34mINFO[0m	middleware/logger.go:29	url /vps/health statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: Go-http-client/1.1 errors:  cost 0s
-2022-01-24 08:30:59	[34mINFO[0m	middleware/logger.go:29	url /vps/health statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 0s
-2022-01-24 08:30:59	[34mINFO[0m	middleware/logger.go:29	url /vps/ram statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 363.2µs
-2022-01-24 08:30:59	[34mINFO[0m	middleware/logger.go:29	url /vps/cpu statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 61.6061ms
-2022-01-24 08:30:59	[34mINFO[0m	middleware/logger.go:29	url /vps/ram statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 0s
-2022-01-24 08:45:23	[34mINFO[0m	initialize/zap.go:55	logger test
-2022-01-24 08:45:23	[35mDEBUG[0m	initialize/zap.go:56	hello debug
-2022-01-24 08:45:23	[34mINFO[0m	initialize/zap.go:58	cools
-2022-01-24 08:45:23	[34mINFO[0m	initialize/router.go:44	Start to listening the incoming requests on http address :6663
-2022-01-24 08:45:36	[34mINFO[0m	initialize/zap.go:55	logger test
-2022-01-24 08:45:36	[35mDEBUG[0m	initialize/zap.go:56	hello debug
-2022-01-24 08:45:36	[34mINFO[0m	initialize/zap.go:58	cools
-2022-01-24 08:45:36	[34mINFO[0m	initialize/router.go:44	Start to listening the incoming requests on http address :6663
-2022-01-24 08:45:59	[34mINFO[0m	initialize/zap.go:55	logger test
-2022-01-24 08:45:59	[35mDEBUG[0m	initialize/zap.go:56	hello debug
-2022-01-24 08:45:59	[34mINFO[0m	initialize/zap.go:58	cools
-2022-01-24 08:45:59	[34mINFO[0m	initialize/router.go:44	Start to listening the incoming requests on http address :6663
-2022-01-24 08:46:25	[34mINFO[0m	initialize/zap.go:55	logger test
-2022-01-24 08:46:25	[35mDEBUG[0m	initialize/zap.go:56	hello debug
-2022-01-24 08:46:25	[34mINFO[0m	initialize/zap.go:58	cools
-2022-01-24 08:46:25	[34mINFO[0m	initialize/router.go:44	Start to listening the incoming requests on http address :6663
-2022-01-24 08:46:54	[34mINFO[0m	middleware/logger.go:28	url /vps/health  statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 0s
-2022-01-24 08:46:54	[34mINFO[0m	middleware/logger.go:28	url /vps/ram  statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 318.3µs
-2022-01-24 08:46:54	[34mINFO[0m	middleware/logger.go:28	url /vps/cpu  statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 50.724ms
-2022-01-24 08:46:54	[34mINFO[0m	middleware/logger.go:28	url /vps/ram  statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 186.7µs
-2022-01-24 08:47:41	[34mINFO[0m	initialize/zap.go:55	logger test
-2022-01-24 08:47:41	[35mDEBUG[0m	initialize/zap.go:56	hello debug
-2022-01-24 08:47:41	[34mINFO[0m	initialize/zap.go:58	cools
-2022-01-24 08:47:41	[34mINFO[0m	initialize/router.go:44	Start to listening the incoming requests on http address :6663
-2022-01-24 08:47:44	[34mINFO[0m	middleware/logger.go:28	url /vps/health 	 statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 0s
-2022-01-24 08:47:45	[34mINFO[0m	middleware/logger.go:28	url /vps/ram 	 statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 848.4µs
-2022-01-24 08:47:45	[34mINFO[0m	middleware/logger.go:28	url /vps/cpu 	 statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 47.7513ms
-2022-01-24 08:47:45	[34mINFO[0m	middleware/logger.go:28	url /vps/ram 	 statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 0s
-2022-01-24 08:47:57	[34mINFO[0m	initialize/zap.go:55	logger test
-2022-01-24 08:47:57	[35mDEBUG[0m	initialize/zap.go:56	hello debug
-2022-01-24 08:47:57	[34mINFO[0m	initialize/zap.go:58	cools
-2022-01-24 08:47:57	[34mINFO[0m	initialize/router.go:44	Start to listening the incoming requests on http address :6663
-2022-01-24 08:50:08	[34mINFO[0m	initialize/zap.go:55	logger test
-2022-01-24 08:50:08	[35mDEBUG[0m	initialize/zap.go:56	hello debug
-2022-01-24 08:50:08	[34mINFO[0m	initialize/zap.go:58	cools
-2022-01-24 08:50:08	[34mINFO[0m	initialize/router.go:44	Start to listening the incoming requests on http address :6663
-2022-01-24 08:50:21	[34mINFO[0m	initialize/zap.go:55	logger test
-2022-01-24 08:50:21	[35mDEBUG[0m	initialize/zap.go:56	hello debug
-2022-01-24 08:50:21	[34mINFO[0m	initialize/zap.go:58	cools
-2022-01-24 08:50:21	[34mINFO[0m	initialize/router.go:44	Start to listening the incoming requests on http address :6663
-2022-01-24 08:50:26	[34mINFO[0m	middleware/logger.go:28	url /vps/health statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 0s
-2022-01-24 08:50:26	[34mINFO[0m	middleware/logger.go:28	url /vps/ram statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 0s
-2022-01-24 08:50:26	[34mINFO[0m	middleware/logger.go:28	url /vps/cpu statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 80.8086ms
-2022-01-24 08:50:26	[34mINFO[0m	middleware/logger.go:28	url /vps/ram statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 0s
-2022-01-24 08:50:33	[34mINFO[0m	middleware/logger.go:28	url /vps/health statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 0s
-2022-01-24 08:50:33	[34mINFO[0m	middleware/logger.go:28	url /vps/ram statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 0s
-2022-01-24 08:50:33	[34mINFO[0m	middleware/logger.go:28	url /vps/cpu statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 32.7514ms
-2022-01-24 08:50:33	[34mINFO[0m	middleware/logger.go:28	url /vps/ram statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 0s
-2022-01-24 08:53:08	[34mINFO[0m	initialize/zap.go:55	logger test
-2022-01-24 08:53:08	[35mDEBUG[0m	initialize/zap.go:56	hello debug
-2022-01-24 08:53:08	[34mINFO[0m	initialize/zap.go:58	cools
-2022-01-24 08:53:08	[34mINFO[0m	initialize/router.go:44	Start to listening the incoming requests on http address :7777
+2022-01-24 10:43:20	[34mINFO[0m	initialize/zap.go:57	logger test
+2022-01-24 10:43:20	[35mDEBUG[0m	initialize/zap.go:58	hello debug
+2022-01-24 10:43:20	[34mINFO[0m	initialize/zap.go:60	cools
+2022-01-24 10:43:20	[34mINFO[0m	initialize/gorm.go:30	Database connection Successful. Database name: db_apiserver
+2022-01-24 10:43:20	[34mINFO[0m	initialize/router.go:48	Start to listening the incoming requests on http address :6663
+2022-01-24 10:43:32	[34mINFO[0m	user/create.go:25	User Create function called.X-Request-Id  
+2022-01-24 10:43:32	[34mINFO[0m	middleware/logger.go:28	url /v1/user statusCode: 200 method: POST query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 77.5199ms
+2022-01-24 10:44:05	[34mINFO[0m	middleware/logger.go:28	url /v1/user/kong123 statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 3.3227ms
+2022-01-24 10:44:15	[34mINFO[0m	middleware/logger.go:28	url /v1/user/kong statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 2.8973ms
+2022-01-24 10:44:36	[34mINFO[0m	middleware/logger.go:28	url /v1/user statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 2.9391ms
+2022-01-24 10:45:24	[34mINFO[0m	initialize/zap.go:57	logger test
+2022-01-24 10:45:24	[35mDEBUG[0m	initialize/zap.go:58	hello debug
+2022-01-24 10:45:24	[34mINFO[0m	initialize/zap.go:60	cools
+2022-01-24 10:45:24	[34mINFO[0m	initialize/gorm.go:30	Database connection Successful. Database name: db_apiserver
+2022-01-24 10:45:24	[34mINFO[0m	initialize/router.go:48	Start to listening the incoming requests on http address :6663
+2022-01-24 10:45:27	[34mINFO[0m	middleware/logger.go:28	url /v1/user statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 5.9958ms
+2022-01-24 10:45:42	[34mINFO[0m	middleware/logger.go:28	url /v1/user/kong statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 2.8978ms
+2022-01-24 10:46:02	[34mINFO[0m	middleware/logger.go:28	url /v1/user statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 4.871ms
+2022-01-24 10:46:06	[34mINFO[0m	middleware/logger.go:28	url /v1/user/123213 statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 3.3941ms
+2022-01-24 10:46:18	[34mINFO[0m	middleware/logger.go:28	url /v1/user statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 4.0664ms
+2022-01-24 10:46:27	[34mINFO[0m	middleware/logger.go:28	url /v1/user/kong123123213 statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 2.4954ms
+2022-01-24 10:48:42	[34mINFO[0m	user/update.go:15	User Create function called.X-Request-Id  
+2022-01-24 10:48:42	[34mINFO[0m	middleware/logger.go:28	url /v1/user/1 statusCode: 200 method: PUT query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 933.8µs
+2022-01-24 10:49:13	[34mINFO[0m	user/update.go:15	User Create function called.X-Request-Id  
+2022-01-24 10:49:13	[34mINFO[0m	middleware/logger.go:28	url /v1/user/1 statusCode: 200 method: PUT query: username=kong&password=kongmodify ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 537.3µs
+2022-01-24 10:49:34	[34mINFO[0m	user/update.go:15	User Create function called.X-Request-Id  
+2022-01-24 10:49:34	[34mINFO[0m	middleware/logger.go:28	url /v1/user/1 statusCode: 200 method: PUT query: username=kong&password=kongmodify ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 81.4262ms
+2022-01-24 10:49:56	[34mINFO[0m	user/update.go:15	User Create function called.X-Request-Id  
+2022-01-24 10:49:56	[34mINFO[0m	middleware/logger.go:28	url /v1/user/1 statusCode: 200 method: PUT query: username=kong&password=kongmodify ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 79.9989ms
+2022-01-24 10:50:07	[34mINFO[0m	user/update.go:15	User Create function called.X-Request-Id  
+2022-01-24 10:50:07	[34mINFO[0m	middleware/logger.go:28	url /v1/user/1 statusCode: 200 method: PUT query: username=kong&password=kongmodify ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 77.7146ms
+2022-01-24 10:57:05	[34mINFO[0m	initialize/zap.go:57	logger test
+2022-01-24 10:57:05	[35mDEBUG[0m	initialize/zap.go:58	hello debug
+2022-01-24 10:57:05	[34mINFO[0m	initialize/zap.go:60	cools
+2022-01-24 10:57:05	[34mINFO[0m	initialize/gorm.go:30	Database connection Successful. Database name: db_apiserver
+2022-01-24 10:57:05	[34mINFO[0m	initialize/router.go:49	Start to listening the incoming requests on http address :6663
+2022-01-24 10:57:11	[34mINFO[0m	middleware/logging.go:28	url /v1/user statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 3.7898ms
+2022-01-24 10:57:40	[34mINFO[0m	middleware/logging.go:28	url /v1/user/123123 statusCode: 200 method: GET query:  ip: 127.0.0.1 user-agent: PostmanRuntime/7.28.0 errors:  cost 2.5066ms

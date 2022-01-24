@@ -27,6 +27,7 @@ func openDB(username, password, addr, name string) *gorm.DB {
 	if err != nil {
 		log.Printf("Database connection failed. Database name: %s error: %s", name, err)
 	}
+	global.Logger.Infof("Database connection Successful. Database name: %s", name)
 
 	// set for db connection
 	setupDB(db)
@@ -42,12 +43,12 @@ func setupDB(db *gorm.DB) {
 
 // used for cli
 func InitDB() *gorm.DB {
-	return openDB(viper.GetString("db.username"),
-		viper.GetString("db.password"),
-		viper.GetString("db.addr"),
-		viper.GetString("db.name"))
+	return openDB(viper.GetString("mysql.username"),
+		viper.GetString("mysql.password"),
+		viper.GetString("mysql.addr"),
+		viper.GetString("mysql.name"))
 }
 
 func InitGorm() {
-	global.Db = InitDB()
+	global.DB = InitDB()
 }

@@ -18,9 +18,10 @@ func RouterInitialize() {
 
 	// 	middlewares
 	g.Use(gin.Recovery())
-	g.Use(middleware.NoCache, middleware.Options, middleware.Secure)
-	g.Use(middleware.Cors())
 	g.Use(middleware.ZapLogger())
+	g.Use(middleware.Cors())
+	g.Use(middleware.RequestId())
+	g.Use(middleware.NoCache, middleware.Options, middleware.Secure)
 	// g.Use(mw...)
 	// 404 handeler
 	g.NoRoute(func(c *gin.Context) {
@@ -38,7 +39,11 @@ func RouterInitialize() {
 
 	u := g.Group("/v1/user")
 	{
-		u.POST("", user.Create)
+		u.POST("", user.Create)       // 创建用户
+		u.DELETE("/:id", user.Delete) // 删除用户
+		u.PUT("/:id", user.Update)    // 更新用户
+		u.GET("", user.List)          // 用户列表
+		u.GET("/:username", user.Get) // 获取指定用户的详细信息
 	}
 
 	global.Logger.Infof("Start to listening the incoming requests on http address %s", viper.GetString("addr"))

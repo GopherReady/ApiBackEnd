@@ -9,7 +9,9 @@ import (
 	"go.uber.org/zap/zapcore"
 )
 
-// var logger *zap.Logger
+// var (
+// 	_ *zap.SugaredLogger
+// )
 
 func InitLogger() (Logger *zap.SugaredLogger) {
 	var coreArr []zapcore.Core

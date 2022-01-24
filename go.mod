@@ -29,6 +29,7 @@ require (
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/natefinch/lumberjack v2.0.0+incompatible // indirect
 	github.com/pelletier/go-toml v1.9.4 // indirect
+	github.com/satori/go.uuid v1.2.0 // indirect
 	github.com/shirou/gopsutil v3.21.11+incompatible // indirect
 	github.com/spf13/afero v1.6.0 // indirect
 	github.com/spf13/cast v1.4.1 // indirect
@@ -36,6 +37,7 @@ require (
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/spf13/viper v1.10.1 // indirect
 	github.com/subosito/gotenv v1.2.0 // indirect
+	github.com/teris-io/shortid v0.0.0-20201117134242-e59966efd125 // indirect
 	github.com/ugorji/go/codec v1.1.7 // indirect
 	github.com/yusufpapurcu/wmi v1.2.2 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
