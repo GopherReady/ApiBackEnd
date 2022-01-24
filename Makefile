@@ -13,8 +13,20 @@ BASEDIR = $(shell pwd)
 build: gotool
 	go build -v  .
 
+swagger:
+	swag init
+
+run:
+	go run main.go
+
+runswag: swagger
+	go run main.go
+
 gotool:
 	gofmt -w .
+
+lint:
+	golangci-lint run
 
 ca:
 	openssl req -new -nodes -x509 -out conf/server.crt -keyout conf/server.key -days 3650 -subj "/C=DE/ST=NRW/L=Earth/O=Random Company/OU=IT/CN=127.0.0.1/emailAddress=xxxxx@qq.com"
@@ -38,7 +50,12 @@ build_mac:
 exec_win:
 	@./main_win.exe
 
-status:
-	git st
+install:
+	go install
+cloc:
+	cloc . --exclude-dir=.idea --out=cloc.txt	#--by-file  #order by file line height
 
-.PHONY: clean gotool ca help build_cross build_windows build-linux exec_win
+wrk:
+	wrk -t12 -c400 -d30s --latency http://127.0.0.1:6663/vps/health
+
+.PHONY: clean gotool ca help build_cross build_windows build-linux exec_win cloc swagger run runswag

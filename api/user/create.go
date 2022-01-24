@@ -19,6 +19,14 @@ func GetReqID(c *gin.Context) string {
 	return ""
 }
 
+// @Summary Add new user to the database
+// @Description Add a new user
+// @Tags user
+// @Accept  json
+// @Produce  json
+// @Param user body user.CreateRequest true "Create a new user"
+// @Success 200 {object} user.CreateResponse "{"code":0,"message":"OK","data":{"username":"kong"}}"
+// @Router /v1/user/register [post]
 // Create creates a new user account.
 func Create(c *gin.Context) {
 	global.Logger.Infof("User Create function called.X-Request-Id %s ", GetReqID(c))

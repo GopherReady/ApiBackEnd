@@ -18,7 +18,6 @@ var (
 
 func main() {
 	pflag.Parse()
-
 	// init config
 	if err := initialize.InitViper(*cfg); err != nil {
 		panic(err)

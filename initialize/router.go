@@ -5,10 +5,14 @@ import (
 
 	"github.com/GopherReady/ApiBackEnd/api/health"
 	"github.com/GopherReady/ApiBackEnd/api/user"
+	_ "github.com/GopherReady/ApiBackEnd/docs"
 	"github.com/GopherReady/ApiBackEnd/global"
 	"github.com/GopherReady/ApiBackEnd/middleware"
+	"github.com/gin-contrib/pprof"
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"
+	ginSwagger "github.com/swaggo/gin-swagger"
+	"github.com/swaggo/gin-swagger/swaggerFiles"
 )
 
 func RouterInitialize() {
@@ -28,6 +32,12 @@ func RouterInitialize() {
 		c.String(http.StatusNotFound, "API router is not found")
 		global.Logger.Infof("Client query wrong router link %s", c.Request.URL)
 	})
+
+	// swagger api docs
+	g.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
+
+	// pprof router
+	pprof.Register(g)
 
 	// The health check handlers
 	VPSHealth := g.Group("/vps")
