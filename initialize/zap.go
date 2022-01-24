@@ -1,8 +1,9 @@
-package config
+package initialize
 
 import (
 	"os"
 
+	"github.com/GopherReady/ApiBackEnd/global"
 	"github.com/natefinch/lumberjack"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
@@ -49,11 +50,12 @@ func InitLogger() (Logger *zap.SugaredLogger) {
 
 	coreArr = append(coreArr, infoFileCore)
 	coreArr = append(coreArr, errorFileCore)
-	Logger = zap.New(zapcore.NewTee(coreArr...), zap.AddCaller()).Sugar() // zap.AddCaller()为显示文件名和行号，可省略
+	SugaredLogger := zap.New(zapcore.NewTee(coreArr...), zap.AddCaller()).Sugar() // zap.AddCaller()为显示文件名和行号，可省略
 
-	Logger.Info("logger test")
-	Logger.Debug("hello debug")
-	Logger.Error("hello error")
-	Logger.Info("cools")
+	SugaredLogger.Info("logger test")
+	SugaredLogger.Debug("hello debug")
+	SugaredLogger.Error("hello error")
+	SugaredLogger.Info("cools")
+	global.Logger = SugaredLogger
 	return Logger
 }

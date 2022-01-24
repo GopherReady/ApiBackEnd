@@ -3,12 +3,11 @@ package middleware
 import (
 	"time"
 
-	"github.com/GopherReady/ApiBackEnd/config"
+	"github.com/GopherReady/ApiBackEnd/global"
 	"github.com/gin-gonic/gin"
 )
 
 func ZapLogger() gin.HandlerFunc {
-	logger := config.InitLogger()
 	return func(c *gin.Context) {
 		start := time.Now()
 		path := c.Request.URL.Path
@@ -26,7 +25,7 @@ func ZapLogger() gin.HandlerFunc {
 		// 	zap.String("errors", c.Errors.ByType(gin.ErrorTypePrivate).String()),
 		// 	zap.Duration("cost", cost),
 		// )
-		logger.Infof("url %s statusCode: %d method: %s query: %s ip: %s user-agent: %s"+
+		global.Logger.Infof("url %s statusCode: %d method: %s query: %s ip: %s user-agent: %s"+
 			" errors: %s cost %s", path, c.Writer.Status(), c.Request.Method, query, c.ClientIP(), c.Request.UserAgent(),
 			c.Errors.ByType(gin.ErrorTypePrivate).String(), cost)
 	}

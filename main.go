@@ -2,17 +2,14 @@ package main
 
 import (
 	"errors"
-	"log"
 	"net/http"
 	"time"
 
-	"github.com/GopherReady/ApiBackEnd/config"
-	"github.com/GopherReady/ApiBackEnd/model"
-	"github.com/GopherReady/ApiBackEnd/router"
-	"github.com/gin-gonic/gin"
+	"github.com/GopherReady/ApiBackEnd/global"
+	"github.com/GopherReady/ApiBackEnd/initialize"
+	"github.com/jinzhu/gorm"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
-	"go.uber.org/zap"
 )
 
 var (
@@ -23,39 +20,29 @@ func main() {
 	pflag.Parse()
 
 	// init config
-	if err := config.Init(*cfg); err != nil {
+	if err := initialize.InitViper(*cfg); err != nil {
 		panic(err)
 	}
 	// init zap logger
-	logger := config.InitLogger()
+	initialize.InitLogger()
 	// init database
-	model.DB.Init()
-	defer model.DB.Close()
+	initialize.InitGorm()
+	defer func(DB *gorm.DB) {
+		err := DB.Close()
+		if err != nil {
+			global.Logger.Error("Gorm database closed failed", err)
+		}
+	}(initialize.DB)
 
-	// gin 有 3 种运行模式：debug、release 和 test，其中 debug 模式会打印很多 debug 信息。
-	gin.SetMode(viper.GetString("runmode"))
-	client := gin.New()
+	initialize.RouterInitialize()
 
-	var middleware []gin.HandlerFunc
-
-	// 	Routes
-	router.Load(
-		// Cores
-		client,
-		// Middleware load
-		middleware...,
-	)
 	// Ping the server to make sure the router is working.
 	go func() {
 		if err := pingServer(); err != nil {
-			log.Fatal("The vps has no response, or it might took too long to start up.", err)
+			global.Logger.Fatal("The vps has no response, or it might took too long to start up.", err)
 		}
-		log.Print("The vps has been deployed successfully.")
+		global.Logger.Info("The vps has been deployed successfully.")
 	}()
-
-	// logger.Info("Start to listening the incoming requests on http address: %s", viper.GetString("addr"))
-	logger.Info("Start to listening the incoming requests on http address", zap.String("addr", viper.GetString("addr")))
-	logger.Info(http.ListenAndServe(viper.GetString("addr"), client).Error())
 
 }
 
@@ -69,7 +56,7 @@ func pingServer() error {
 		}
 
 		// Sleep for a second to continue the next ping.
-		log.Print("Waiting for the vps, retry in 1 second.")
+		global.Logger.Info("Waiting for the vps, retry in 1 second.")
 		time.Sleep(time.Second)
 	}
 	return errors.New("Cannot connect to the vps.")

@@ -3,3 +3,15 @@ addr: :6663                  # HTTP绑定端口
 name: apiserver              # API Server的名字
 url: http://127.0.0.1:6663   # pingServer函数请求的API服务器的ip:port
 max_ping_count: 10           # pingServer函数try的次数
+
+db:
+  name: db_apiserver
+  addr: 127.0.0.1:3306
+  username: root
+  password: mysqlroot...
+
+
+
+# JWT配置
+jwt:
+  signingKey: z3d6k8v0n3w7m9sa1fd0u09h
